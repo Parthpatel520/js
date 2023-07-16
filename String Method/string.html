@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let str = "parth_chhatrala"
+      document.write("length of string is" + str.length + "<br>");
+      document.write("uppercase string is" + str.toUpperCase() + "<br>");
+      document.write("lowercase string is" + str.toLowerCase() + "<br>");
+
+      let ch = str.slice(5, 10);
+      document.write("slice function" + ch + "<br>");
+
+      let ch1 = str.slice(5);
+      document.write("slice reverse function" + ch1 + "<br>");
+
+      ch1 = str.slice(-5);
+      document.write("slice reverse function : " + ch1 + "<br>");
+
+      ch1 = str.slice(-10, -4);
+      document.write("slice reverse function : " + ch1 + "<br>");
+
+      ch1 = str.substring(5, 14);
+      document.write("sub string function : " + ch1 + "<br>");
+
+      let text1 = "My self Parth chhatarala";
+      let rep_text = text1.replace(/chhatrala/gi,"patel");
+      document.write("Replace string "+rep_text+"<br>");
+
+      let tet1="parth";
+      let text2="chhatrala";
+      let text3=text2.concat("*",text1);
+      document.write("Merge string function "+text3+"<br>");
+
+      let finalText = "I am".concat("","parth","","patel");
+      document.write("Merge string function"+finalText+"<br>");
+
+      let t1="           parth          ";
+      document.write("Msg is "+t1.length+"<br>");
+      let t2=t1.trimEnd();
+      document.write("Msg is "+t2.length+"<br>");
+
+      let t3="4";
+      document.write("pad start is "+t3.padStart(5,"0"));
+      document.write("char at is "+text.charcodeAt(5));
+    </script>
+  </body>
+</html>

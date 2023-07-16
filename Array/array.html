@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const name1=["abc","xyz","pqr",];
+
+      // length
+      document.write(">>>>>>>>>>>>>>>>>---length---<<<<<<<<<<<<<<<<<<<<br>")
+      let ch = name1.length;
+      document.write("Array Length "+ch+"<br>");
+
+      // Array Number of Index
+      document.write(">>>>>>>>>>>>>>>>>---Array Number of Index---<<<<<<<<<<<<<<<<<<<<br>")
+      document.write("first is "+name1[0]+"<br>");
+
+      // Convert Array into string
+      document.write(">>>>>>>>>>>>>>>>>---Convert Array into string---<<<<<<<<<<<<<<<<<<<<br>")
+      let a = name1.toString();
+      document.write("Array "+a+"<br>");
+
+      // Add Element from last
+      document.write(">>>>>>>>>>>>>>>>>---Add Element from last---<<<<<<<<<<<<<<<<<<<<br>")
+      name1.push("hello");
+      for(let i=0;i<name1.length;i++){
+          document.write("Name is "+name1[i]+"<br>");
+      }
+
+      // Remove Element from last
+      document.write(">>>>>>>>>>>>>>>>>---Remove Element from last---<<<<<<<<<<<<<<<<<<<<br>")
+      name1.pop();
+      for(let i=0;i<name1.length;i++){
+          document.write("Name is "+name1[i]+"<br>");
+      }
+
+      // Remove Element from first
+      document.write(">>>>>>>>>>>>>>>>>---Remove Element from First---<<<<<<<<<<<<<<<<<<<<br>")
+      name1.shift();
+      for(i=0;i<name1.length;i++){
+          document.write(name1[i]+"<br>");
+      }
+
+      // Add Element from first
+      document.write(">>>>>>>>>>>>>>>>>---Add Element from First---<<<<<<<<<<<<<<<<<<<<br>")
+      name1.unshift("hii");
+      for(i=0;i<name1.length;i++){
+          document.write(name1[i]+"<br>");
+      }
+
+      // Update Element using Index/Position
+      document.write(">>>>>>>>>>>>>>>>>---Update Element using Index/Position---<<<<<<<<<<<<<<<<<<<<br>")
+      name1[1] = "how";
+      for(i=0;i<name1.length;i++){
+          document.write(name1[i]+"<br>");
+      }
+
+      // Delete Element using Index/Position
+      document.write(">>>>>>>>>>>>>>>>>---Delete Element using Index/Position---<<<<<<<<<<<<<<<<<<<<br>")
+      delete name1[2];
+      for(i=0;i<name1.length;i++){
+          document.write(name1[i]+"<br>");
+      }
+
+      // Merge or Multiple Array
+      document.write(">>>>>>>>>>>>>>>>>---Merge or Multiple Array---<<<<<<<<<<<<<<<<<<<<br>")
+      let A = ["Hello","parth"];
+      let B = ["how","Are","You"];
+      let C = A.concat(B);
+      for(i=0;i<C.length;i++){
+          document.write(C[i]+"<br>");
+      }
+      // To string concat
+      document.write("*To string concat*<br>")
+      let D = C.concat(name1,A);
+      for(i=0;i<D.length;i++){
+          document.write(D[i]+"<br>");
+      }
+
+      // You can add & remove using splice function.
+      document.write(">>>>>>>>>>>---You can <b>add & remove</b> using splice function---<<<<<<<<<<<<br>")
+      D.splice(2,0,"patel");
+      for(i=0;i<D.length;i++){
+          document.write(D[i]+"<br>");
+      }
+
+      // Array sort
+      document.write(">>>>>>>>>>>---After Sorting---<<<<<<<<<<<<br>")
+      let arr=[10,40,30,70,20,60,5,9,38];
+      document.write(arr.sort(function(a,b) {return a-b})+"<br>"); //Ascending order
+      document.write(arr.reverse(function(a,b) {return b-a})); //Descending Order
+
+
+    </script>
+  </body>
+</html>
